@@ -1,8 +1,1 @@
-title: Turán Numbers & Extremal Graph Theory
-description: A curated repository of extremal bounds, asymptotic behavior, and structural theorems.
-theme: minima
-
-kramdown:
-  math_engine: null
-  input: GFM
-  hard_wrap: false
+include: [".nojekyll"]
