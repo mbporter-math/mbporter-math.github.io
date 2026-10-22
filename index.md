@@ -3,11 +3,12 @@ layout: default
 title: The Turán Number of C_4
 ---
 
-<!-- Load KaTeX math rendering scripts -->
+{::nomarkdown}
+<!-- Load KaTeX math rendering scripts safely -->
 <link rel="stylesheet" href="https://jsdelivr.net">
 <script defer src="https://jsdelivr.net"></script>
-<script defer src="https://jsdelivr.net"
-        onload="renderMathInElement(document.body);"></script>
+<script defer src="https://jsdelivr.net" onload="renderMathInElement(document.body);"></script>
+{:/nomarkdown}
 
 # Extremal Graph Theory & Turán Numbers
 
