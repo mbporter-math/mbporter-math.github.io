@@ -3,22 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Extremal Graph Theory & Turán Numbers</title>
+    <title>Extremal Graph Theory &amp; Turán Numbers</title>
     
-    <!-- Load KaTeX core CSS and JavaScript files -->
+    <!-- Load KaTeX core CSS and JavaScript -->
     <link rel="stylesheet" href="https://jsdelivr.net">
     <script defer src="https://jsdelivr.net"></script>
     
-    <!-- Load the auto-render extension to scan the text for math delimiters -->
-    <script defer src="https://jsdelivr.net" 
-            onload="renderMathInElement(document.body, {
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false},
-                    {left: '\\(', right: '\\)', display: false},
-                    {left: '\\[', right: '\\]', display: true}
-                ]
-            });"></script>
+    <!-- Load the auto-render extension -->
+    <script defer src="https://jsdelivr.net"></script>
             
     <style>
         body { 
@@ -37,7 +29,7 @@
 
     <h1>Extremal Graph Theory &amp; Turán Numbers</h1>
 
-    <p>Welcome to my curated repository of extremal bounds, asymptotic behavior, and structural theorems. </p>
+    <p>Welcome to my curated repository of extremal bounds, asymptotic behavior, and structural theorems.</p>
 
     <h3>Testing Inline Math</h3>
     <p>We can write a basic inline formula like $ex(n, C_4)$ or reference a specific clique index $K_r$.</p>
@@ -49,5 +41,19 @@
 
     <p>When $q$ is a prime power and $n = q^2 + q + 1$, the unique extremal graphs are derived from projective planes.</p>
 
+    <!-- Run the initializer right before the page finishes loading -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
 </body>
 </html>
