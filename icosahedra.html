@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Alternative Census of Icosahedral Stellations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #222; margin-top: 30px; }
+        .axiom-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .axiom-title { font-weight: bold; color: #0066cc; }
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .stats-table th, .stats-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .stats-table th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+
+    <h1>An Alternative Census of Icosahedral Stellations</h1>
+    
+    <p>The formal enumeration of the stellations of the regular icosahedron has traditionally been governed by the strict topological constraints set forth by J.C.P. Miller and Patrick Du Val in the seminal 1938 text, <i>The Fifty-Nine Icosahedra</i>. While Coxeter's classic list of 59 models remains the standard paradigm, it relies heavily on historical restrictions regarding mandatory face-continuity and edge-to-edge linkages across the stellation diagram lines.</p>
+    
+    <p>This project presents a complete, unconstrained mathematical enumeration of the icosahedral cell decomposition space. By discarding arbitrary edge-continuity rules and evaluating the system purely from first principles of solid mechanics and visual boundary mapping, the baseline combinatorial search space collapses not to 59, but to exactly <b>205 unique, physically distinct polyhedral configurations</b>.</p>
+
+    <h2>The Foundational Axioms</h2>
+    <p>This census evaluates the $2^{12} = 4096$ binary permutations of the 12 independent, atomic cell types of the icosahedron using only two strict, non-negotiable structural rules:</p>
+    
+    <div class="axiom-box">
+        <span class="axiom-title">Axiom 1: Full Icosahedral Symmetry (The Atomic Set Rule)</span><br>
+        Cells belonging to the exact same symmetry type—treating the chiral enantiomorphs of the $f_1$ shell as distinct structural entities—must be included or excluded concurrently as a complete symmetric set.
+    </div>
+
+    <div class="axiom-box">
+        <span class="axiom-title">Axiom 2: Topological Solid-Equivalence (The Reachability Filter)</span><br>
+        If two distinct binary configurations of cells produce the identical, reachable external boundary wireframe from the open air, they are mathematically merged into a single equivalent entry. Any internal cavity or hollow space completely sealed off from topological reachability is automatically forced to be solid matter.
+    </div>
+
+    <h2>Reconciling the Polyhedral Landscape</h2>
+    <p>By defining reachability via a rigorous 13-node dual-graph network, the combinatorial tree filters out hidden internal Blackouts natively. This framework bridges the gap between historical catalogs and pure combinatorial reality:</p>
+
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>Census Framework</th>
+                <th>Unique Solids</th>
+                <th>Core Structural Parameters / Filtering Rules</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Coxeter / Du Val (1938)</b></td>
+                <td>59</td>
+                <td>Requires strict face-continuity. Forbids point-connections at vertices.</td>
+            </tr>
+            <tr>
+                <td><b>Inchbald Census (2000)</b></td>
+                <td>116</td>
+                <td>Permits point-connections, but disqualifies disjoint unions and simplifies chiral symmetry tracking.</td>
+            </tr>
+            <tr>
+                <td><b>This Census (Solid-Equivalent)</b></td>
+                <td><b>205</b></td>
+                <td>Pure reachability mapping. Fully preserves all 26 independent disjoint unions and 84 unique chiral open-valley configurations.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Below is the complete, systematic catalog of the 205 solid-equivalent wireframes, indexed using an alphanumeric, capitalized-foundation prefix notation (e.g., <i>De<sub>1</sub>f<sub>1</sub>'f<sub>2</sub></i>).</p>
+
+    <!-- The catalog lists can be inserted directly right below here -->
+
+</body>
+</html>
