@@ -39,26 +39,38 @@
 
     <h1>An Alternative Census of Icosahedral Stellations</h1>
     
-    <p>The formal enumeration of the stellations of the regular icosahedron has traditionally been governed by the strict topological constraints set forth by J.C.P. Miller and Patrick Du Val in the seminal 1938 text, <i>The Fifty-Nine Icosahedra</i>. While Coxeter's classic list of 59 models remains the standard paradigm, it relies heavily on historical restrictions regarding mandatory face-continuity and edge-to-edge linkages across the stellation diagram lines.</p>
+    <p>The formal enumeration of the stellations of the regular icosahedron has traditionally been governed by the strict topological constraints set forth in the seminal 1938 text, <i>The Fifty-Nine Icosahedra</i>. The classic list of 59 models remains the standard paradigm today, but it relies on restrictive rules about face-continuity and edge-to-edge linkages across the stellation diagram lines.</p>
     
-    <p>This project presents a complete, unconstrained mathematical enumeration of the icosahedral cell decomposition space. By discarding arbitrary edge-continuity rules and evaluating the system purely from first principles of solid mechanics and visual boundary mapping, the baseline combinatorial search space collapses not to 59, but to exactly <b>205 unique, physically distinct polyhedral configurations</b>.</p>
+    <p>This project presents a complete, unconstrained enumeration of the icosahedral cell decomposition space. By discarding arbitrary edge-continuity rules and evaluating the system purely from first principles of solid mechanics and visual boundary mapping, the baseline combinatorial search space collapses not to 59, but to exactly <b>205 unique, physically distinct polyhedral configurations</b>.</p>
 
     <h2>The Foundational Axioms</h2>
-    <p>This census evaluates the $2^{12} = 4096$ binary permutations of the 12 independent, atomic cell types of the icosahedron using only two strict, non-negotiable structural rules:</p>
+    <p>This census evaluates the $2^{12} = 4096$ binary permutations of the 12 independent, atomic cell types of the icosahedron using only two structural rules:</p>
     
     <div class="axiom-box">
         <span class="axiom-title">Axiom 1: Full Icosahedral Symmetry (The Atomic Set Rule)</span><br>
-        Cells belonging to the exact same symmetry type—treating the chiral enantiomorphs of the $f_1$ shell as distinct structural entities—must be included or excluded concurrently as a complete symmetric set.
+        Cells belonging to the exact same symmetry type—treating the chiral enantiomorphs of the $f_1$ shell as distinct structural entities—must be included or excluded as a complete set.
     </div>
 
     <div class="axiom-box">
         <span class="axiom-title">Axiom 2: Topological Solid-Equivalence (The Reachability Filter)</span><br>
-        If two distinct binary configurations of cells produce the identical, reachable external boundary wireframe from the open air, they are mathematically merged into a single equivalent entry. Any internal cavity or hollow space completely sealed off from topological reachability is automatically forced to be solid matter.
+        If two distinct binary configurations of cells produce identical external boundaries, they are merged into a single equivalent entry. Any internal cavity or hollow space that is sealed off from the outside is changed to solid matter.
     </div>
 
-    <p style="margin-top: 40px; font-size: 0.9em; color: #666;">
-        For further reading regarding structural stellation variants and historical rejections, visit <a href="https://www.steelpillow.com/polyhedra/" target="_blank">Guy's Polyhedra Pages on Steelpillow</a>.
-    </p>
+    <hr style="border: 0; border-top: 1px solid #eee; margin-top: 50px;">
+
+    <h2>References</h2>
+    <ol style="padding-left: 20px; font-size: 0.95em; color: #444;">
+        <li style="margin-bottom: 12px;">
+            Coxeter, H. S. M., Du Val, P., Flather, H. T., &amp; Petrie, J. F. (1938). 
+            <i>The Fifty-Nine Icosahedra</i>. University of Toronto Studies (Mathematical Series, No. 6). 
+            University of Toronto Press.
+        </li>
+        <li style="margin-bottom: 12px;">
+            Inchbald, G. (2000). Towards stellating the icosahedron and faceting the dodecahedron. 
+            <i>Symmetry: Culture and Science</i>, 11(1-4), 393-410. 
+            Digital text available at <a href="https://steelpillow.com" target="_blank">Steelpillow Polyhedra Pages</a>.
+        </li>
+    </ol>
 
 </body>
 </html>
