@@ -34,6 +34,44 @@
         }
         .stats-table th { background-color: #f4f4f4; }
     </style>
+    <script>
+        function launchCleanModel(hashState) {
+            // 1. Establish the clean destination domain
+            const targetUrl = "https://monman53.github.io/stellated-polyhedra-explorer/#" + hashState;
+            
+            // 2. Open a pristine window instance
+            const newWindow = window.open(targetUrl, "_blank");
+            
+            // 3. Cache-Busting Interception:
+            // If a window already exists, we force-clear its historical context 
+            // to stop it from reading its old LocalStorage session on load.
+            if (newWindow) {
+                newWindow.blur();
+                // Force a clean network reload, overriding local storage snapshots
+                setTimeout(() => {
+                    newWindow.location.replace(targetUrl);
+                    newWindow.focus();
+                }, 100);
+            }
+        }
+    </script>
+
+    <style>
+        /* Styling your clean table action buttons */
+        .launch-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+            display: inline-block;
+        }
+        .launch-btn:hover { background-color: #004499; }
+    </style>
 </head>
 <body>
 
@@ -106,9 +144,8 @@
                     <td>0</td>
                     <td>00000000000</td>
                     <td>#1 - icosahedral core</td>
-                    <td><a class="explorer-link" href="https://monman53.github.io/stellated-polyhedra-explorer/#1000000000000" target="_blank">&#128362; Launch Model</a></td>
+                    <td><button class="launch-btn" onclick="launchCleanModel('1000000000000')">&#128362; Launch Model</button></td>
                 </tr>
-                
                 <!-- Row 2: Standalone e1 Spikes -->
                 <tr>
                     <td><span class="notation-mono">e1</span></td>
