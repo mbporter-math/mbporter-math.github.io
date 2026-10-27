@@ -71,6 +71,82 @@
             Digital text available at <a href="https://steelpillow.com" target="_blank">Steelpillow Polyhedra Pages</a>.
         </li>
     </ol>
+    <h2>Interactive Census Table (Beta Testing)</h2>
+    <p>Use the links in the rightmost columns to automatically generate live 2D face blueprints and interactive 3D models via the Stellated Polyhedra Explorer.</p>
+
+    <style>
+        .census-container { width: 100%; overflow-x: auto; margin-top: 20px; }
+        .census-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+        .census-table th, .census-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .census-table th { background-color: #f4f4f4; position: sticky; top: 0; }
+        .census-table tr:nth-child(even) { background-color: #fafafa; }
+        .notation-mono { font-family: monospace; font-weight: bold; background: #eee; padding: 2px 5px; border-radius: 3px; }
+        .bitstring-mono { font-family: monospace; letter-spacing: 2px; }
+        .bit-fill { color: #0066cc; font-weight: bold; }
+        .bit-hidden { color: #888; font-style: italic; }
+        .explorer-link { color: #0066cc; text-decoration: none; font-weight: bold; }
+        .explorer-link:hover { text-decoration: underline; }
+    </style>
+
+    <div class="census-container">
+        <table class="census-table">
+            <thead>
+                <tr>
+                    <th>Cell Notation</th>
+                    <th>Face Notation</th>
+                    <th>Binary State <br><small>(h&rarr;a)</small></th>
+                    <th>Structural Commentary</th>
+                    <th>2D Diagram / 3D Canvas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1: Core Icosahedron -->
+                <tr>
+                    <td><span class="notation-mono">A</span></td>
+                    <td>0</td>
+                    <td><span class="bitstring-mono">00000000000<span class="bit-fill">1</span></span></td>
+                    <td>The unstellated regular icosahedron core seed. All outer layers vacant.</td>
+                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                </tr>
+                
+                <!-- Row 2: Standalone e1 Spikes -->
+                <tr>
+                    <td><span class="notation-mono">e1</span></td>
+                    <td>4</td>
+                    <td><span class="bitstring-mono">0000000<span class="bit-fill">1</span>000<span class="bit-hidden">x</span></span></td>
+                    <td>20 standalone triangular spikes. Underneath cavities (a, b, c) are force-filled.</td>
+                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                </tr>
+
+                <!-- Row 3: Standalone e2 Vertex Caps -->
+                <tr>
+                    <td><span class="notation-mono">e2</span></td>
+                    <td>5</td>
+                    <td><span class="bitstring-mono">000000<span class="bit-fill">1</span>0000<span class="bit-hidden">x</span></span></td>
+                    <td>60 vertex cap cells cluster around 5-fold axes, leaving 3-fold valleys wide open.</td>
+                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                </tr>
+
+                <!-- Row 4: Your f1' f2 Chiral Open Valley Model -->
+                <tr>
+                    <td><span class="notation-mono">e2f1'f2</span></td>
+                    <td>5 6' 8</td>
+                    <td><span class="bitstring-mono">000<span class="bit-fill">1</span>0<span class="bit-fill">1</span><span class="bit-fill">1</span>000<span class="bit-hidden">x</span></span></td>
+                    <td>Chiral valley walls and vertex spikes. Open tunnels leave core layers visible.</td>
+                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                </tr>
+
+                <!-- Row 5: The Flather Rescued point-connected solid -->
+                <tr>
+                    <td><span class="notation-mono">Ce2</span></td>
+                    <td>2 5</td>
+                    <td><span class="bitstring-mono">000000<span class="bit-fill">1</span>000<span class="bit-fill">1</span><span class="bit-hidden">x</span></span></td>
+                    <td>Rescued 1930 Flather solid. Vertex caps touch 5-octahedra core at single points.</td>
+                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
