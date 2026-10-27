@@ -34,44 +34,6 @@
         }
         .stats-table th { background-color: #f4f4f4; }
     </style>
-    <script>
-        function launchCleanModel(hashState) {
-            // 1. Establish the clean destination domain
-            const targetUrl = "https://monman53.github.io/stellated-polyhedra-explorer/#" + hashState;
-            
-            // 2. Open a pristine window instance
-            const newWindow = window.open(targetUrl, "_blank");
-            
-            // 3. Cache-Busting Interception:
-            // If a window already exists, we force-clear its historical context 
-            // to stop it from reading its old LocalStorage session on load.
-            if (newWindow) {
-                newWindow.blur();
-                // Force a clean network reload, overriding local storage snapshots
-                setTimeout(() => {
-                    newWindow.location.replace(targetUrl);
-                    newWindow.focus();
-                }, 100);
-            }
-        }
-    </script>
-
-    <style>
-        /* Styling your clean table action buttons */
-        .launch-btn {
-            background-color: #0066cc;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.85em;
-            display: inline-block;
-        }
-        .launch-btn:hover { background-color: #004499; }
-    </style>
 </head>
 <body>
 
@@ -133,53 +95,49 @@
                     <th>Cell Notation</th>
                     <th>Face Notation</th>
                     <th>Binary State <br><small>(h&rarr;a)</small></th>
-                    <th>Structural Commentary</th>
-                    <th>2D Diagram / 3D Canvas</th>
+                    <th>Comments</th>
+                    <th>Link (under construction)</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Row 1: Core Icosahedron -->
                 <tr>
                     <td><span class="notation-mono">A</span></td>
                     <td>0</td>
-                    <td>00000000000</td>
+                    <td>000000000001</td>
                     <td>#1 - icosahedral core</td>
-                    <td><button class="launch-btn" onclick="launchCleanModel('1000000000000')">&#128362; Launch Model</button></td>
+                    <td></td>
                 </tr>
-                <!-- Row 2: Standalone e1 Spikes -->
+
                 <tr>
                     <td><span class="notation-mono">e1</span></td>
                     <td>3' 5</td>
                     <td>000000010000</td>
                     <td>#9</td>
-                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                    <td></td>
                 </tr>
 
-                <!-- Row 3: Standalone e2 Vertex Caps -->
                 <tr>
                     <td><span class="notation-mono">e2</span></td>
                     <td>4' 6 7</td>
                     <td>000000100000</td>
                     <td>#15</td>
-                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                    <td></td>
                 </tr>
 
-                <!-- Row 4: Your f1' f2 Chiral Open Valley Model -->
                 <tr>
-                    <td><span class="notation-mono">e2f1'f2</span></td>
-                    <td>5 6' 8</td>
-                    <td><span class="bitstring-mono">000<span class="bit-fill">1</span>0<span class="bit-fill">1</span><span class="bit-fill">1</span>000<span class="bit-hidden">x</span></span></td>
-                    <td>Chiral valley walls and vertex spikes. Open tunnels leave core layers visible.</td>
-                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                    <td>e2f1'f2</td>
+                    <td>4' 5' 6 8 9 10</td>
+                    <td>000101100000 and 000110100000</td>
+                    <td>#51</td>
+                    <td></td>
                 </tr>
 
-                <!-- Row 5: The Flather Rescued point-connected solid -->
                 <tr>
                     <td><span class="notation-mono">Ce2</span></td>
-                    <td>2 5</td>
-                    <td><span class="bitstring-mono">000000<span class="bit-fill">1</span>000<span class="bit-fill">1</span><span class="bit-hidden">x</span></span></td>
-                    <td>Rescued 1930 Flather solid. Vertex caps touch 5-octahedra core at single points.</td>
-                    <td><a class="explorer-link" href="https://github.io" target="_blank">&#128362; Launch Model</a></td>
+                    <td>2 4' 6 7</td>
+                    <td>0000001001xx</td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
