@@ -71,8 +71,23 @@
             Digital text available at <a href="https://steelpillow.com" target="_blank">Steelpillow Polyhedra Pages</a>.
         </li>
     </ol>
-    <h2>Interactive Census Table (Beta Testing)</h2>
-    <p>Use the links in the rightmost columns to automatically generate live 2D face blueprints and interactive 3D models via the Stellated Polyhedra Explorer.</p>
+    <h2>Census Table (Beta Testing)</h2>
+
+    <style>
+        .census-container { width: 100%; overflow-x: auto; margin-top: 20px; }
+        .census-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+        .census-table th, .census-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .census-table th { background-color: #f4f4f4; position: sticky; top: 0; }
+        .census-table tr:nth-child(even) { background-color: #fafafa; }
+        .notation-mono { font-family: monospace; font-weight: bold; background: #eee; padding: 2px 5px; border-radius: 3px; }
+        .bitstring-mono { font-family: monospace; letter-spacing: 2px; }
+        .bit-fill { color: #0066cc; font-weight: bold; }
+        .bit-hidden { color: #888; font-style: italic; }
+        .explorer-link { color: #0066cc; text-decoration: none; font-weight: bold; }
+        .explorer-link:hover { text-decoration: underline; }
+    </style>
+
+    <h2>Census Table (under construction)</h2>
 
     <style>
         .census-container { width: 100%; overflow-x: auto; margin-top: 20px; }
@@ -94,7 +109,7 @@
                 <tr>
                     <th>Cell Notation</th>
                     <th>Face Notation</th>
-                    <th>Binary State <br><small>(h&rarr;a)</small></th>
+                    <th>Binary Combinations</th>
                     <th>Comments</th>
                     <th>Link (under construction)</th>
                 </tr>
@@ -103,7 +118,7 @@
                 <tr>
                     <td><span class="notation-mono">A</span></td>
                     <td>0</td>
-                    <td>000000000001</td>
+                    <td><span class="bitstring-mono">000000000001</span></td>
                     <td>#1 - icosahedral core</td>
                     <td></td>
                 </tr>
@@ -111,7 +126,7 @@
                 <tr>
                     <td><span class="notation-mono">e1</span></td>
                     <td>3' 5</td>
-                    <td>000000010000</td>
+                    <td><span class="bitstring-mono">000000010000</span></td>
                     <td>#9</td>
                     <td></td>
                 </tr>
@@ -119,15 +134,15 @@
                 <tr>
                     <td><span class="notation-mono">e2</span></td>
                     <td>4' 6 7</td>
-                    <td>000000100000</td>
+                    <td><span class="bitstring-mono">000000100000</span></td>
                     <td>#15</td>
                     <td></td>
                 </tr>
 
                 <tr>
-                    <td>e2f1'f2</td>
+                    <td><span class="notation-mono">e2f1'f2</span></td>
                     <td>4' 5' 6 8 9 10</td>
-                    <td>000101100000 and 000110100000</td>
+                    <td><span class="bitstring-mono">000101100000</span> <small>and</small> <span class="bitstring-mono">000110100000</span></td>
                     <td>#51</td>
                     <td></td>
                 </tr>
@@ -135,7 +150,7 @@
                 <tr>
                     <td><span class="notation-mono">Ce2</span></td>
                     <td>2 4' 6 7</td>
-                    <td>0000001001xx</td>
+                    <td><span class="bitstring-mono">0000001001xx</span></td>
                     <td></td>
                     <td></td>
                 </tr>
